@@ -1,0 +1,12 @@
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\bin\Debug\netcoreapp2.0\MVCEmployee.deps.json
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\bin\Debug\netcoreapp2.0\MVCEmployee.runtimeconfig.json
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\bin\Debug\netcoreapp2.0\MVCEmployee.runtimeconfig.dev.json
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\bin\Debug\netcoreapp2.0\MVCEmployee.dll
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\bin\Debug\netcoreapp2.0\MVCEmployee.pdb
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\obj\Debug\netcoreapp2.0\MVCEmployee.csprojResolveAssemblyReference.cache
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\obj\Debug\netcoreapp2.0\MVCEmployee.csproj.CoreCompileInputs.cache
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\obj\Debug\netcoreapp2.0\MVCEmployee.AssemblyInfoInputs.cache
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\obj\Debug\netcoreapp2.0\MVCEmployee.AssemblyInfo.cs
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\obj\Debug\netcoreapp2.0\MVCEmployee.dll
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\obj\Debug\netcoreapp2.0\MVCEmployee.pdb
+C:\Users\Peter\source\repos\MVCEmployee\MVCEmployee\bin\Debug\netcoreapp2.0\wwwroot\css\site.css

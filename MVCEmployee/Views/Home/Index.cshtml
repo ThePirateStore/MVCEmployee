@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-4 azure">
+        <h2>EmployeesMG Database</h2>
+        <ul>
+            <li><a asp-area="" asp-controller="Employees" asp-action="Index">View All Employees.</a></li>
+            <li><a asp-area="" asp-controller="Employees" asp-action="Create">Create an Employee.</a></li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4 col-md-offset-1 beige">
+        <h2>EmployeeMG Activity</h2>
+        <ul>
+            <li>Permission changes.</li>
+            <li>Manager changes.</li>
+            <li>Position changes.</li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4 col-md-offset-1 aquamarine">
+        <h2>EmployeeMG Reports</h2>
+        <ul>
+            <li>Employees hired per week.</li>
+            <li>Employees terminated in the current year.</li>
+            <li>Permissions counter.</li>
+        </ul>
+    </div>
+</div>

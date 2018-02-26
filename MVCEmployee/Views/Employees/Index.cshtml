@@ -1,0 +1,84 @@
+﻿@model MVCEmployee.Models.EmployeeTypeViewModel
+
+@{
+    ViewData["Title"] = "Database";
+}
+
+<h2 class="azure">EmployeeMG Database</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New Employee</a>
+</p>
+
+<form asp-controller="Employees" asp-action="Index" method="get">
+    <p>
+        <select asp-for="employeeType" asp-items="Model.Department">
+            <option value="">All Departments</option>
+        </select>
+
+        Name: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.employees[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employees[0].Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employees[0].Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employees[0].Position)
+                </th>
+                <th class="hidden-xs">
+                    @Html.DisplayNameFor(model => model.employees[0].Department)
+                </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.employees) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <span class="hidden-xs hidden-sm hidden-md">
+                        <a href="mailto:@Html.DisplayFor(modelItem => item.Email)">@Html.DisplayFor(modelItem => item.Email)</a>
+                </span>
+                <span class="hidden-lg hidden-xl">
+                        <a href="mailto:@Html.DisplayFor(modelItem => item.Email)">
+                           <i class="glyphicon glyphicon-envelope" title="@Html.DisplayFor(modelItem => item.Email)" aria-hidden="true"></i>
+                        </a>
+                </span>
+            </td>
+            <td>
+                <span class="hidden-xs hidden-sm hidden-md">
+                    <a href="tel:@Html.DisplayFor(modelItem => item.Phone)">@Html.DisplayFor(modelItem => item.Phone)</a>
+                </span>
+                <span class="hidden-lg hidden-xl">
+                    <a href="tel:@Html.DisplayFor(modelItem => item.Phone)">
+                        <i class="glyphicon glyphicon-earphone" title="@Html.DisplayFor(modelItem => item.Phone)" aria-hidden="true"></i>
+                    </a>
+                </span>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Position)
+            </td>
+            <td class="hidden-xs">
+                @Html.DisplayFor(modelItem => item.Department)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
